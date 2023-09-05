@@ -1,0 +1,67 @@
+import java.util.*;
+
+public class CollectionsExample {
+
+    public static void main(String[] args) {
+
+        // Create a set
+        Set<String> set = new HashSet<>();
+        set.add("one");
+        set.add("two");
+        set.add("three");
+        set.add("four");
+        set.add("five");
+
+        // Add an element to the set
+        set.add("six");
+
+        // Remove an element from the set
+        set.remove("three");
+
+        // Check if an element is in the set
+        System.out.println("Is 'four' in the set? " + set.contains("four"));
+
+        // Get the length of the set
+        System.out.println("The length of the set is " + set.size());
+
+        // Create a list
+        List<String> list = new ArrayList<>();
+        list.add("one");
+        list.add("two");
+        list.add("three");
+        list.add("four");
+        list.add("five");
+
+        // Add an element to the list
+        list.add("six");
+
+        // Remove an element from the list
+        list.remove("three");
+
+        // Get the length of the list
+        System.out.println("The length of the list is " + list.size());
+
+        // Create a map
+        Map<String, Integer> map = new HashMap<>();
+        map.put("one", 1);
+        map.put("two", 2);
+        map.put("three", 3);
+        map.put("four", 4);
+        map.put("five", 5);
+
+        // Get the value of a key
+        System.out.println("The value of the key 'two' is " + map.get("two"));
+
+        // Add a key-value pair to the map
+        map.put("six", 6);
+
+        // Remove a key-value pair from the map
+        map.remove("three");
+
+        // Get the keys of the map
+        System.out.println("The keys of the map are " + map.keySet());
+
+        // Get the values of the map
+        System.out.println("The values of the map are " + map.values());
+    }
+}
